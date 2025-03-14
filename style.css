@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin-bottom: 60px; /* Space for footer */
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #007bff, #6f42c1);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.jumbotron h1 {
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+}
+
+.container {
+    max-width: 960px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    margin-bottom: 1.5rem;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color:#007bff;
+}
+
+.challenge-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.navbar-brand img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.card-img-top {
+    width: 100%; /* Make images fill the card width */
+    height: 200px; /* Set a fixed height for consistency.  Adjust as needed! */
+    object-fit: cover; /* Important:  This makes the images cover the area without stretching. */
+}
