@@ -13,9 +13,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-             <a class="navbar-brand" href="#">BME Hackathon</a>  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"> <div class="container">
+             <a class="navbar-brand" href="#">BME Hackathon</a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,14 +27,16 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#challenges">Challenges</a>
                     </li>
-                    <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link" href="#format">Format</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#programme">Programme</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#sponsors">Sponsors</a>
+                        <a class="nav-link" href="#projects">Projects</a> </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#register">Register</a>
@@ -54,7 +56,7 @@
         </div>
     </div>
 
-   <div class="container" id="about">
+   <div class="container section-padding" id="about">
         <h2>About the Hackathon</h2>
         <div class="row">
             <div class="col-md-8">
@@ -64,71 +66,71 @@
                 <p><strong>Eligibility:</strong> Open to all students from the School of EEE and Computer Science and from the Faculty of Humanities and Social Sciences at the University of Liverpool! A prize 🏆 will be awarded to the winning team and all attendees will receive HEAR</p>
             </div>
             <div class="col-md-4">
-                <img src="assets/main_picture.png" alt="Hackathon Image" class="img-fluid">
+                 <img src="assets/main_picture.png" alt="British Music Experience Interaction" class="img-fluid rounded shadow-sm">
             </div>
         </div>
     </div>
 
-    <div class="container text-center my-4 bg-white">
+    <div class="container text-center my-4 bg-white py-3 rounded shadow-sm">
         <a href="https://www.liverpool.ac.uk/careers/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/uol_careers_logo.jpeg" alt="UoL&Careers Logo" style="height: 80px; margin: 0 15px; padding-bottom: 15px;">
+             <img src="assets/uol_careers_logo.jpeg" alt="UoL Careers Logo" style="height: 70px; margin: 0 15px;">
         </a>
         <a href="https://amlab.liverpool.ac.uk/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/AMlogo_H_black-transparent.png" alt="AM Lab Logo" style="height: 80px; margin: 0 15px; padding-bottom: 15px;">
+            <img src="assets/AMlogo_H_black-transparent.png" alt="AM Lab Logo" style="height: 70px; margin: 0 15px;">
         </a>
         <a href="https://www.britishmusicexperience.com/" target="_blank" rel="noopener noreferrer">
-            <img src="assets/bme_logo_a.jpg" alt="British Music Experience Logo" style="height: 80px; margin: 0 15px; padding-bottom: 15px;">
+            <img src="assets/bme_logo_a.jpg" alt="British Music Experience Logo" style="height: 70px; margin: 0 15px;">
         </a>
     </div>
 
 
-    <div class="container" id="challenges">
+    <div class="container section-padding" id="challenges">
         <h2>One theme, 4 challenges 🤘</h2>
         <p>The core theme is <strong>“AI for Knowledge Discovery and Immersive Engagement”</strong>. We aim to move beyond traditional museum experiences by leveraging AI and immersive technologies to create personalised journeys through musical history, fostering deeper engagement and understanding.</p>
         <p>We have identified 4 key challenges. Each challenge offers a unique opportunity to make a real impact. Don't think of AI as the main goal - think of it as part of the solution!</p>
 
         <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="assets/challenge_1.jpg" class="card-img-top" alt="Placeholder Image for Challenge 1">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/challenge_1.jpg" class="card-img-top" alt="Archive boxes and digital connections">
                     <div class="card-header">
-                        <i class="bi bi-archive challenge-icon"></i> Living Archive
+                        <i class="bi bi-archive challenge-icon-header"></i> Living Archive
                     </div>
                     <div class="card-body">
                         <p class="card-text">Use AI to streamline data management and connect items with external knowledge, ensuring collection accuracy.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                     <img src="assets/challenge_2.png" class="card-img-top" alt="Placeholder Image for Challenge 2">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                     <img src="assets/challenge_2.png" class="card-img-top" alt="Tools overlayed on a museum exhibit">
                     <div class="card-header">
-                        <i class="bi bi-tools challenge-icon"></i> Hacking the BME
+                        <i class="bi bi-tools challenge-icon-header"></i> Hacking the BME
                     </div>
                     <div class="card-body">
                         <p class="card-text">Reimagine an existent exhibition at the museum, enhancing it with AI without losing its original charm.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="assets/challenge_3.png" class="card-img-top" alt="Placeholder Image for Challenge 3">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/challenge_3.png" class="card-img-top" alt="Personalized pathway through music icons">
                     <div class="card-header">
-                       <i class="bi bi-person-lines-fill challenge-icon"></i>  Personalised Storytelling
+                       <i class="bi bi-person-lines-fill challenge-icon-header"></i> Personalised Storytelling
                     </div>
                     <div class="card-body">
                         <p class="card-text">Leverage AI to create personalised museum experiences that cater to individual tastes.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="assets/challenge_4_b.jpeg" class="card-img-top" alt="Placeholder Image for Challenge 4">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="assets/challenge_4_b.jpeg" class="card-img-top" alt="Sound waves and game controllers">
                       <div class="card-header">
-                    <i class="bi bi-music-note-list challenge-icon"></i> Musically Immersive Exploration
+                    <i class="bi bi-joystick challenge-icon-header"></i> Musically Immersive Exploration
                       </div>
                     <div class="card-body">
-                        <p class="card-text">Use games and gamification to create immersive experiences to explore the BME.</p>
+                        <p class="card-text">Use games and gamification to create immersive experiences to explore the BME knowledge base.</p>
                     </div>
                 </div>
             </div>
@@ -137,96 +139,240 @@
 
 
 
-    <div class="container" id="format">
-        <h2>Event Format</h2>
-        <p><strong>Day 1 (afternoon): Exploration and Ideation:</strong> Visit the British Music Experience, team formation, and brainstorming.</p>
-        <p><strong>Day 2 & 3: Hackathon:</strong> Intensive development and prototyping at the University of Liverpool's Career Studio, with mentor support. Sessions on Responsible use of AI fundamentals and concept generation will be provided.</p>
-        <p><strong>Final Presentations:</strong> Short presentations to a panel of judges, followed by awards and networking.</p>
-        <p><strong>Prizes <i class="bi bi-trophy"></i>:</strong> We will award a prize to the most innovative and impactful project.</p>
+    <div class="container section-padding" id="format">
+        <h2>Event Format <i class="bi bi-calendar-event"></i></h2>
+        <p><strong>Day 1 (Afternoon, Fri 4th Apr): Exploration and Ideation:</strong> Visit the British Music Experience, team formation, and brainstorming.</p>
+        <p><strong>Day 2 (Mon 7th Apr) & Day 3 (Tue 8th Apr): Hackathon:</strong> Intensive development and prototyping at the University of Liverpool's Career Studio, with mentor support. Sessions on Responsible AI use and concept generation will be provided.</p>
+        <p><strong>Day 3 (Afternoon, Tue 8th Apr): Final Presentations:</strong> Short presentations to a panel of judges, followed by awards and networking.</p>
+        <p><strong>Prizes <i class="bi bi-trophy-fill"></i>:</strong> We will award a prize to the most innovative and impactful project. All participants contributing significantly will be eligible for HEAR recognition.</p>
     </div>
 
-     <div class="container" id="programme">
-        <h2>Draft Event Programme (TBD)</h2>
+     <div class="container section-padding" id="programme">
+        <h2>Draft Event Programme (Subject to Minor Changes)</h2>
 
-        <div class="card">
-            <div class="card-header">Day One, Friday 4th April - Kickoff at the BME</div>
+        <div class="card mb-3 shadow-sm">
+            <div class="card-header bg-secondary text-white">Day One, Friday 4th April - Kickoff at the BME</div>
             <div class="card-body">
-                <table class="table">
+                <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Time</th>
-                            <th>Activity</th>
+                            <th scope="col" style="width: 30%;">Time</th>
+                            <th scope="col">Activity</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>2:00 AM</td><td>Students meet at the British Music Experience.</td></tr>
-                        <tr><td>2:30 PM - 3:00 PM</td><td>Welcome at the BME</td></tr>
-                        <tr><td>3:00 PM - 5:00 PM</td><td>Brainstorming, group formation, idea generation</td></tr>
+                        <tr><td>2:00 PM</td><td>Meet outside the British Music Experience (Cunard Building)</td></tr>
+                        <tr><td>2:30 PM - 2:45 PM</td><td>Welcome Briefing & BME Introduction (Kevin McManus)</td></tr>
+                        <tr><td>2:30 PM - 2:45 PM</td><td>Introduction to the hackathon and challenges (Jacopo)</td></tr>
+                        <tr><td>3:00 PM - 4:00 PM</td><td>Explore the BME Museum & Identify Opportunities</td></tr>
+                        <tr><td>4:00 PM - 5:00 PM</td><td>Initial Brainstorming, Team Formation Discussions (Informal)</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-         <div class="card">
-            <div class="card-header">Day Two, Monday 7th April - Hackathon, Career Studio, Foundation Building</div>
+         <div class="card mb-3 shadow-sm">
+            <div class="card-header bg-secondary text-white">Day Two, Monday 7th April - Hackathon Day 1 (Career Studio, Foundation Building)</div>
             <div class="card-body">
-               <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Activity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>9:00 AM - 9:30 AM</td><td>Registration & Welcome</td></tr>
-                        <tr><td>9:30 AM - 12:30 PM</td><td>Morning Session</td></tr>
-                        <tr><td>12:30 PM - 1:30 PM</td><td>Lunch</td></tr>
-                        <tr><td>1:30 PM - 5:00 PM</td><td>Afternoon Session</td></tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-          <div class="card">
-            <div class="card-header">Day Three, Tuesday 8th April - Hackathon, Career Studio, Foundation Building</div>
-            <div class="card-body">
-                <table class="table">
+               <table class="table table-striped">
                      <thead>
                         <tr>
-                            <th>Time</th>
-                            <th>Activity</th>
+                             <th scope="col" style="width: 30%;">Time</th>
+                            <th scope="col">Activity</th>
                         </tr>
                     </thead>
                     <tbody>
-                         <tr><td>9:30 AM - 12:30 PM</td><td>Morning Session</td></tr>
-                        <tr><td>12:30 PM - 1:30 PM</td><td>Lunch</td></tr>
-                        <tr><td>1:30 PM - 4:30 PM</td><td>Afternoon Session</td></tr>
-                         <tr><td>4:30 PM - 7:00 PM</td><td>Presentations and Awards</td></tr>
+                        <tr><td>9:00 AM - 9:30 AM</td><td>Arrival, Registration & Coffee</td></tr>
+                        <tr><td>9:30 AM - 10:00 AM</td><td>Official Welcome, Hackathon Goals & Logistics</td></tr>
+                        <tr><td>10:00 AM - 10:30 AM</td><td>Challenge Deep Dive & Team Finalisation</td></tr>
+                        <tr><td>10:30 AM - 12:30 PM</td><td>Hacking Session 1 (Mentors Available)</td></tr>
+                        <tr><td>12:30 PM - 1:30 PM</td><td>Lunch (Provided) & Informal Networking</td></tr>
+                        <tr><td>1:30 PM - 5:00 PM</td><td>Hacking Session 2 (Mentors Available)</td></tr>
+                        <tr><td>5:00 PM</td><td>End of Day 2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+          <div class="card mb-3 shadow-sm">
+            <div class="card-header bg-secondary text-white">Day Three, Tuesday 8th April - Hackathon Day 2 & Finale (Career Studio)</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                     <thead>
+                        <tr>
+                             <th scope="col" style="width: 30%;">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>9:00 AM - 9:30 AM</td><td>Arrival & Coffee</td></tr>
+                        <tr><td>9:30 AM - 12:30 PM</td><td>Hacking Session 3 (Focus on Prototyping & Presentation Prep)</td></tr>
+                        <tr><td>12:30 PM - 1:30 PM</td><td>Lunch (Provided)</td></tr>
+                        <tr><td>1:30 PM - 3:30 PM</td><td>Final Hacking Session & Presentation Finalisation</td></tr>
+                        <tr><td>3:30 PM - 4:00 PM</td><td>Submission Deadline & Tech Check</td></tr>
+                        <tr><td>4:30 PM - 6:30 PM</td><td>Project Presentations (Short Pitch Format)</td></tr>
+                        <tr><td>6:30 PM - 6:45 PM</td><td>Judges Deliberation & Refreshments</td></tr>
+                        <tr><td>6:45 PM - 7:00 PM</td><td>Awards Ceremony & Closing Remarks</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 
-    <div class="container" id="faq">
-        <h2>Frequently Asked Questions (FAQ)</h2>
+     <div class="container section-padding" id="projects">
+        <h2>Hackathon Projects Showcase <i class="bi bi-lightbulb-fill"></i></h2>
+        <p>See what our amazing teams are building during the hackathon! Click 'More Details' for summaries and links.</p>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        TalkToTheBeatles
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Blue and Grey (Vans)</h5>
+                        <p class="card-text project-summary">Interactive experience, speaking or texting with each of the four Beatles. Uses generative AI with a knowledge base linked to the Beatles and to the BME to give realistic conversations.</p>
+                        <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        Gamifying the BME
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Codeplay</h5>
+                        <p class="card-text project-summary">Creating a game revolving around the history and items in the BME to make the experience more interactive, accessible, memorable, and fun for all visitors.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        Smart Museum
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Ctlr and See</h5>
+                        <p class="card-text project-summary">Making use of computer vision to track user movements within the museum and provide personalised insights based on their journey.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        Holomentor
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: DRS</h5>
+                        <p class="card-text project-summary">An instructive tool that teaches users how to play instruments like piano, guitar, or drums, providing instructions and feedback based on user responses.</p>
+                          <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                        MuseMix: Your Soundtrack Through the BME
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Echo Tales</h5>
+                        <p class="card-text project-summary">Blends Spotify listening history with BME stories. Discover featured artists, explore via an interactive map, and get personalized recommendations.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                       The Chain
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Fleetwood Hack</h5>
+                        <p class="card-text project-summary">Connects your personal music library or streaming history to the related displays and artifacts within the British Music Experience.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                       Wembley Rewind: The Live Aid Experience
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Let It BME</h5>
+                        <p class="card-text project-summary">An immersive, AI-powered installation letting visitors relive the Live Aid 1985 concert, exploring the event timeline and asking questions.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal7">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                       Calliope
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Shortcake</h5>
+                        <p class="card-text project-summary">A web app offering a customizable audio tour via a floor plan interface, with detailed artist info and an AI chat box for exhibit questions.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal8">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-4 col-md-6 mb-4">
+                 <div class="card h-100 shadow-sm">
+                    <div class="card-header">
+                       Enhanced UK-US Influence Dashboard
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Team: Staccato</h5>
+                        <p class="card-text project-summary">Using AI, knowledge graphs, and multimodal analytics to uncover deeper lyrical and region-based cultural influences between UK/US music.</p>
+                         <button type="button" class="btn btn-sm btn-outline-primary mt-auto" data-bs-toggle="modal" data-bs-target="#projectModal9">
+                            More Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div> <div class="container section-padding" id="faq">
+        <h2>Frequently Asked Questions (FAQ) <i class="bi bi-question-circle-fill"></i></h2>
         <div class="accordion" id="faqAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                         aria-expanded="true" aria-controls="collapseOne">
-                        Do I need to know how to code to participate?
+                        Do I need coding/AI experience to participate?
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        No, coding experience is not required! We welcome students from all disciplines. While coding
-                        skills can be helpful, we encourage participation from anyone with an interest in music,
-                        history, design, storytelling, or innovation. The hackathon is about generating ideas, not
-                        just writing code. However, it is important that each team has at least one member with coding
-                        and AI skills to effectively implement a prototype of their ideas.
+                        No, diverse skills are welcome! While coding/AI skills are useful within a team, we strongly encourage participation from students with backgrounds in music, history, design, storytelling, and more. The goal is interdisciplinary collaboration. We recommend teams have a mix of skills, including at least one member comfortable with some prototyping/coding.
                     </div>
                 </div>
             </div>
@@ -234,13 +380,13 @@
                 <h2 class="accordion-header" id="heading8">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                        Can I use tools like GitHub Copilot?
+                        Can we use AI code generation tools (e.g., GitHub Copilot, ChatGPT)?
                     </button>
                 </h2>
                 <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes, absolutely! We encourage the use of tools like GitHub Copilot and other AI-powered coding assistants to accelerate your prototyping process. This is a hackathon, and rapid development is key. More information about responsible AI use will be provided during the event.
+                        Yes, absolutely! Using AI assistants like Copilot or ChatGPT for coding and ideation is permitted and encouraged to help you build quickly. Remember to use them responsibly – understand the code generated and focus on the overall solution's quality and innovation. More guidelines on responsible AI use will be provided.
                     </div>
                 </div>
             </div>
@@ -249,28 +395,44 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Can I form a team before the event?
+                        Should I form a team before the event?
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Groups will be formed during the event in order to maximise the complementary skills and backgrounds of the participants. We highly encourage groups composed of students from different departments! You can reach out to your friends at UoL and think about how your team might look like, or you can find teammates on the first day of the event.
+                        While you can come with friends or colleagues in mind, official team formation will happen during the kickoff session on Day 1. This ensures teams are interdisciplinary and balanced. We aim for teams of 3-5 members. Use the kickoff to meet others with complementary skills!
                     </div>
                 </div>
             </div>
+
+             <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        What is the ideal team size?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We recommend teams of 3 to 5 people to ensure a good mix of skills and manageable collaboration during the event.
+                    </div>
+                </div>
+            </div>
+
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        What are the judging criteria?
+                        How will the projects be judged?
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                       The judging criteria will be announced at the start of the hackathon, but will likely include factors such as innovation, feasibility, impact, user experience, and presentation quality. (TBD)
+                       Projects will be evaluated by a panel from the University of Liverpool and the British Music Experience based on criteria including: <strong>Originality & Innovation</strong>, <strong>Impact & Relevance to BME</strong>, <strong>Quality & Execution</strong>, <strong>Relevance to Chosen Challenge</strong>, <strong>Responsible Use of AI</strong>, <strong>Technical Feasibility</strong>, and <strong>Presentation Clarity</strong>. The detailed scoring rubric will be shared at the start of the hackathon.
                     </div>
                 </div>
             </div>
@@ -279,28 +441,13 @@
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                       Is food provided?
+                       Will food and drinks be provided?
                     </button>
                 </h2>
                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                       Yes, lunch will be provided.
-                    </div>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        What is the maximum/minimum team size?
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        The recommended team size is 3-5 people. (TBD)
+                       Yes, lunch will be provided on both full hackathon days (Monday 7th and Tuesday 8th April). Coffee, tea, and water will also be available. Please specify any dietary requirements during registration.
                     </div>
                 </div>
             </div>
@@ -309,16 +456,32 @@
                 <h2 class="accordion-header" id="headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Do I need to bring my own laptop and equipment?
+                        What should I bring?
                     </button>
                 </h2>
                 <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Yes, participants are required to bring their own laptops, chargers, and any other necessary equipment (headphones, mice, tablets, etc.) for their projects.  Please ensure your laptop is capable of running any software you plan to use.  Wi-Fi will be provided.
+                        Please bring your own laptop, charger, and any specific peripherals you might need (mouse, headphones, drawing tablet, etc.). Ensure your laptop can run the software you intend to use. Wi-Fi access will be provided at the Career Studio venue. Enthusiasm and ideas are also mandatory!
                     </div>
                 </div>
             </div>
+
+             <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        What data or APIs will be available?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Details regarding specific datasets from the British Music Experience or relevant APIs (potentially related to music information, knowledge graphs, etc.) will be provided during the hackathon kickoff and briefing sessions. Assume standard web APIs are accessible.
+                    </div>
+                </div>
+            </div>
+
 
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSix">
@@ -330,73 +493,228 @@
                 <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                     data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        No, this is an in-person event.
+                        No, this hackathon is designed as an in-person event to foster collaboration and direct interaction with mentors and the BME context. Physical presence is required, especially for Day 1 at the BME and Days 2/3 at the Career Studio.
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        What data is available?
-                    </button>
-                </h2>
-                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                    data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        Information about the available data from the British Music Experience will be provided to participants at the start of the hackathon. (TBD)
-                    </div>
-                </div>
-            </div>
-
 
         </div>
     </div>
 
-    <div class="container" id="responsible-ai">
-        <h2>Responsible AI Use</h2>
+    <div class="container section-padding" id="responsible-ai">
+        <h2>Responsible AI Use <i class="bi bi-shield-check"></i></h2>
         <p>
-            We encourage the responsible and ethical use of AI tools during this hackathon.  Participants are
-            permitted to use tools like GitHub Copilot, ChatGPT, and other AI-powered coding assistants and generative AI tools to accelerate
-            their prototyping process.  However, it's important to remember that these tools are aids, not
-            replacements for your own creativity and understanding.
+            We encourage the innovative use of AI tools, but it's crucial to do so responsibly and ethically. Participants
+            can leverage tools like GitHub Copilot, ChatGPT, Stable Diffusion, and other AI assistants/generative models.
+            However, please adhere to the following principles:
         </p>
-        <p>
-            Please ensure that any AI-generated content is properly attributed and that you understand the
-            limitations and potential biases of the tools you use.  We will be providing more information
-            on responsible AI practices during the event. The focus should be on innovative ideas and solutions, not just on the tools used to create them.
-        </p>
+        <ul>
+            <li><strong>Understand & Attribute:</strong> Understand the outputs of AI tools. If significant portions of code or content are AI-generated, acknowledge this appropriately within your project documentation or presentation.</li>
+            <li><strong>Bias Awareness:</strong> Be mindful that AI models can inherit biases from their training data. Critically evaluate AI outputs for fairness and potential unintended consequences.</li>
+            <li><strong>Data Privacy:</strong> If handling any user data (even hypothetical), consider privacy implications. Do not use personal data inappropriately.</li>
+            <li><strong>Focus on Value:</strong> Use AI where it genuinely enhances the project and adds value, not just for the sake of using AI. Explain the rationale behind your AI choices.</li>
+        </ul>
+         <p>Further guidance and discussion on responsible AI practices will occur during the hackathon.</p>
     </div>
 
 
-    <div class="container" id="sponsors">
-        <h2>Call for Sponsors</h2>
+    <div class="container section-padding" id="sponsors">
+        <h2>Call for Sponsors <i class="bi bi-building"></i></h2>
         <p>
-            We are seeking sponsors to help make this exciting hackathon a success! Your support will enable us to provide
-            valuable resources, mentorship, and prizes for our student participants, fostering innovation at the
-            intersection of AI, music, and cultural heritage.
+            Partner with us to make the "Unlocking the British Music Experience with AI" hackathon a landmark event! Your sponsorship supports the next generation of innovators and provides resources, prizes, and mentorship, directly contributing to creative solutions at the intersection of AI, music, and cultural heritage.
         </p>
         <p>
-            Sponsorship packages are available at various levels, offering opportunities for brand exposure,
-            recruitment, and engagement with cutting-edge AI projects. Contact us to learn more about how you can
-            become a partner in this unique event.
+            Gain brand visibility, connect with talented students from diverse disciplines, and showcase your commitment to innovation in AI and the creative industries. Various sponsorship packages are available.
         </p>
          <p>
-           <strong> Contact:</strong> jacopo.deberardinis@liverpool.ac.uk
+           <strong> Interested in sponsoring? Contact:</strong> Dr. Jacopo De Berardinis at <a href="mailto:jacopo.deberardinis@liverpool.ac.uk">jacopo.deberardinis@liverpool.ac.uk</a>
         </p>
+         </div>
+
+    <div class="container section-padding" id="register">
+        <h2>Registration <i class="bi bi-pencil-square"></i></h2>
+        <p>Ready to step inside the history of British music and shape its future with AI? Register now via Handshake to secure your spot!</p>
+        <a class="btn btn-primary btn-lg shadow" href="https://liverpool.joinhandshake.co.uk/edu/events/49686" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-box-arrow-up-right"></i> Register on Handshake
+        </a>
+         <!-- <p class="mt-3 text-muted">Registration closes [Insert Date Here, e.g., 28th March 2025] or when capacity is reached.</p> -->
     </div>
 
-    <div class="container" id="register">
-        <h2>Registration</h2>
-        <p>Ready to join the hackathon? Register now via Handshake!</p>
-        <a class="btn btn-primary btn-lg" href="https://liverpool.joinhandshake.co.uk/edu/events/49686" target="_blank" rel="noopener noreferrer">Register on Handshake</a>
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal1Label">Project: TalkToTheBeatles</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Blue and Grey (Vans)</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>Interactive experience, speaking or texting with each of the four Beatles. Uses generative AI with a knowledge base linked to the Beatles and to the BME to give realistic conversations.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal2Label">Project: Gamifying the BME</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Codeplay</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>In order to make the BME more interactive and accessible to all people, creating a game revolving around all the history and items that are present in the BME, overall making the BME a more memorable and fun experience for everyone visiting it.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal3Label">Project: Smart Museum</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Ctlr and See</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>Making use of computer vision to track user movements and provide personalised insights.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal4Label">Project: Holomentor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: DRS</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>This is an instructive tool that teaches users how to play instruments; for example the piano, guitar or drums. It provides instructions and feedback based on user responses.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal5Label">Project: MuseMix: Your Soundtrack Through the British Music Experience</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Echo Tales</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>MuseMix blends your Spotify listening history with the legendary stories inside the BME Museum. Discover which of your favorite artists are featured, explore the exhibits on an interactive map, and get personalized recommendations rooted in your music taste. It’s your musical journey in the museum customized to your taste.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal6Label">Project: The Chain</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Fleetwood Hack</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>Connects your music to the displays. Connects your personal music library or streaming history to the related displays and artifacts within the British Music Experience.</p><hr> <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal7" tabindex="-1" aria-labelledby="projectModal7Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal7Label">Project: Wembley Rewind: The Live Aid Experience</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Let It BME</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>Step into the day rock music changed the world. An immersive, AI-powered installation that lets visitors relive the iconic Live Aid 1985 concert at Wembley Stadium. Through a mix of sound design, archival footage, and voice-activated storytelling, users can explore the timeline of the event, ask questions about artists, performances, and behind-the-scenes moments, and receive dynamic responses in video or in audio/text form.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal8" tabindex="-1" aria-labelledby="projectModal8Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal8Label">Project: Calliope</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Shortcake</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>The project is a web app that offers a customisable audio tour of the BME, featuring a floor plan-style interface where users can choose a default or artist-focused experience, with more detailed narration for selected artists and explanations of exhibit connections. An integrated AI chat box allows users to ask questions about specific exhibits using exhibit and label numbers, pulling accurate information from an existing dataset.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="projectModal9" tabindex="-1" aria-labelledby="projectModal9Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal9Label">Project: Enhanced UK–US Influence Dashboard</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Team: Staccato</h6><hr>
+            <h6>Full Summary:</h6>
+            <p>Description: We aim to uncover deeper connections between British and American music scenes. This dashboard would use AI, knowledge graphs, and multimodal analytics to reveal lyrical, and region based cultural influences.</p><hr>
+            <h6>Team Members:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Project Image/Demo:</h6><p><i>(Details pending)</i></p><hr>
+            <h6>Links:</h6><p>GitHub: <i>(Pending)</i><br>Presentation: <i>(Pending)</i></p>
+          </div>
+          <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+        </div>
+      </div>
     </div>
 
-    <br>
-
-    <div class="footer">
-        <p>&copy; 2025 University of Liverpool & British Music Experience Hackathon.</p>
-    </div>
+    <footer class="footer mt-auto py-3 bg-dark text-white"> <div class="container text-center">
+             <p class="mb-0">&copy; 2025 University of Liverpool & British Music Experience Hackathon.</p>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

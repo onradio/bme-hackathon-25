@@ -1,97 +1,269 @@
+/* Base styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
-    margin-bottom: 60px; /* Space for footer */
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text */
+    padding-top: 56px; /* Adjust if navbar height changes */
+     position: relative; /* Needed for scrollspy if added */
+     padding-bottom: 60px; /* Space for footer */
 }
 
+/* Jumbotron styling */
 .jumbotron {
-    background: linear-gradient(135deg, #007bff, #6f42c1);
+    background: linear-gradient(135deg, #0d6efd, #6f42c1); /* Updated Bootstrap 5 blue to purple gradient */
     color: white;
-    padding: 3rem 2rem;
-    border-radius: 0;
-    margin-bottom: 0;
+    padding: 4rem 2rem; /* Increased padding */
+    margin-bottom: 0; /* Remove bottom margin */
     text-align: center;
+    border-radius: 0; /* Sharp corners */
 }
-
 
 .jumbotron h1 {
-    font-weight: 800;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 800; /* Bold heading */
+    font-size: 3.5rem; /* Larger font size */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* Enhanced text shadow */
 }
 
 .jumbotron p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-
+    font-size: 1.3rem; /* Slightly larger paragraph text */
+    margin-bottom: 2.5rem; /* More space below paragraph */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
+.jumbotron .btn-light { /* Style the button */
+    font-weight: 600;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
+}
+
+/* Container and Section styling */
 .container {
-    max-width: 960px;
+    max-width: 1140px; /* Wider container for larger screens */
 }
 
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    border: none;
-    margin-bottom: 1.5rem;
-
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-header {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+.section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 h2 {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    color:#007bff;
+    margin-top: 1rem; /* Reduced top margin */
+    margin-bottom: 2rem; /* Increased bottom margin */
+    font-weight: 700; /* Bolder headings */
+    color:#0d6efd; /* Bootstrap 5 primary blue */
+    text-align: center; /* Center section headings */
+    border-bottom: 2px solid #dee2e6; /* Subtle underline */
+    padding-bottom: 0.5rem;
 }
 
-.challenge-icon {
-    font-size: 3rem;
-    color: #007bff;
-    margin-bottom: 1rem;
+h2 i { /* Style icons in headings */
+    margin-left: 0.5rem;
+    color: #6c757d; /* Secondary color */
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #343a40;
+/* Card styling */
+.card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out; /* Smooth transition */
+    border: none; /* Remove default border */
+    border-radius: 0.375rem; /* Standard Bootstrap border-radius */
+    margin-bottom: 1.5rem; /* Consistent spacing */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.card-header {
+    background-color: #0d6efd; /* Bootstrap 5 primary blue */
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    font-weight: 600; /* Bolder header */
+    border-bottom: none; /* Remove border below header */
+     border-top-left-radius: 0.375rem; /* Match card radius */
+    border-top-right-radius: 0.375rem;
 }
-.navbar-brand img {
-    height: 50px; /* Adjust as needed */
-    margin-right: 10px;
+
+.challenge-icon-header {
+    font-size: 1.2rem; /* Adjust icon size in header */
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .card-img-top {
-    width: 100%; /* Make images fill the card width */
-    height: 200px; /* Set a fixed height for consistency.  Adjust as needed! */
-    object-fit: cover; /* Important:  This makes the images cover the area without stretching. */
+    width: 100%;
+    height: 220px; /* Consistent image height */
+    object-fit: cover; /* Cover area without distortion */
+     border-top-left-radius: 0.375rem; /* Match card radius */
+    border-top-right-radius: 0.375rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.2s ease, border-color 0.2s ease; /* Smoother transition */
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7; /* Darker blue on hover */
+    border-color: #0a58ca;
+}
+
+.btn-lg {
+     padding: 0.75rem 1.25rem; /* Standard large button padding */
+    font-size: 1.1rem; /* Standard large button font size */
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.btn-outline-primary {
+     border-color: #0d6efd;
+     color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+     background-color: #0d6efd;
+     color: white;
+}
+
+
+/* Footer styling */
+.footer {
+    /* position: fixed; remove fixed position */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    background-color: #212529; /* Bootstrap dark background */
+    color: rgba(255, 255, 255, 0.7); /* Lighter text color */
+    text-align: center;
+    padding: 1rem 0; /* More padding */
+    margin-top: 3rem; /* Ensure space above footer */
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 0.25rem; /* Reduce margin between paragraphs */
+}
+
+/* Navbar adjustments */
+.navbar-dark .navbar-brand {
+    font-weight: 600;
+    color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8); /* Slightly brighter nav links */
+    transition: color 0.2s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff; /* White on hover/active */
+}
+
+/* Accordion Customization */
+.accordion-button {
+    font-weight: 500;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4; /* Match primary color when open */
+    background-color: #e7f1ff; /* Light blue background when open */
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Focus ring */
+}
+.accordion-item {
+     border: 1px solid #dee2e6;
+     margin-bottom: 0.5rem; /* Add space between items */
+     border-radius: 0.375rem;
+     overflow: hidden; /* Ensures contained border radius */
+}
+.accordion-header {
+     margin-bottom: 0; /* Remove margin from header */
+}
+
+
+/* Project Card Specific Styles */
+.card .project-summary {
+  /* Limits the text block to 4 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Adjust number of lines shown */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  /* Provide a minimum height to help alignment */
+  min-height: 90px; /* Adjust as needed based on font size/line height */
+  margin-bottom: 1rem; /* Add some space before the button */
+  color: #495057; /* Slightly lighter text for summary */
+}
+
+.card-body.d-flex {
+    /* Ensure card body takes up available space if h-100 is used on card */
+     flex-grow: 1;
+}
+
+.card-body .btn {
+  /* Ensures button stays at the bottom */
+  align-self: flex-start; /* Aligns button to the left */
+}
+
+/* Modal Placeholder Styling */
+.modal-body i {
+    color: #6c757d; /* Bootstrap's secondary text color */
+    font-style: italic; /* Keep italic for placeholder */
+}
+
+.modal-body hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+    .jumbotron p {
+        font-size: 1.1rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+        text-align: left; /* Align left on smaller screens */
+         border-bottom: none;
+         padding-bottom: 0;
+    }
+     .section-padding {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .card-img-top {
+        height: 180px; /* Adjust image height */
+    }
+    .col-lg-4 { /* Ensure 2 columns on medium, 1 on small */
+         flex: 0 0 auto;
+         width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-4 {
+         width: 100%; /* Stack cards on small screens */
+    }
+     .jumbotron h1 {
+        font-size: 2rem;
+    }
+    .jumbotron p {
+        font-size: 1rem;
+    }
+    .footer {
+        font-size: 0.8rem;
+    }
+     body {
+        padding-bottom: 80px; /* More space for potentially taller footer */
+    }
 }
