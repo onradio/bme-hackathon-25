@@ -4,8 +4,9 @@ body {
     background-color: #f8f9fa; /* Light grey background */
     color: #343a40; /* Dark grey text */
     padding-top: 56px; /* Adjust if navbar height changes */
-     position: relative; /* Needed for scrollspy if added */
-     padding-bottom: 60px; /* Space for footer */
+    position: relative; /* Needed for scrollspy if added */
+    /* Removed padding-bottom: 60px; */
+    margin: 0; /* Ensure no default body margin */
 }
 
 /* Jumbotron styling */
@@ -31,11 +32,14 @@ body {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.jumbotron .btn-light { /* Style the button */
+.jumbotron .btn-light.disabled { /* Style disabled button */
     font-weight: 600;
     padding: 0.8rem 1.8rem;
     font-size: 1.1rem;
+    opacity: 0.65; /* Standard disabled opacity */
+    pointer-events: none; /* Prevent clicks */
 }
+
 
 /* Container and Section styling */
 .container {
@@ -52,15 +56,12 @@ h2 {
     margin-bottom: 2rem; /* Increased bottom margin */
     font-weight: 700; /* Bolder headings */
     color:#0d6efd; /* Bootstrap 5 primary blue */
-    text-align: center; /* Center section headings */
-    border-bottom: 2px solid #dee2e6; /* Subtle underline */
-    padding-bottom: 0.5rem;
+    /* Removed text-align: center; */
+    /* Removed border-bottom and padding-bottom */
+    text-align: left; /* Explicitly set to left */
 }
 
-h2 i { /* Style icons in headings */
-    margin-left: 0.5rem;
-    color: #6c757d; /* Secondary color */
-}
+/* Removed h2 i styling as icons are removed */
 
 /* Card styling */
 .card {
@@ -112,6 +113,13 @@ h2 i { /* Style icons in headings */
     border-color: #0a58ca;
 }
 
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #0d6efd; /* Keep color for disabled */
+    border-color: #0d6efd;
+    opacity: 0.65;
+}
+
+
 .btn-lg {
      padding: 0.75rem 1.25rem; /* Standard large button padding */
     font-size: 1.1rem; /* Standard large button font size */
@@ -132,17 +140,12 @@ h2 i { /* Style icons in headings */
      color: white;
 }
 
-
 /* Footer styling */
 .footer {
-    /* position: fixed; remove fixed position */
-    /* left: 0; */
-    /* bottom: 0; */
-    /* width: 100%; */
     background-color: #212529; /* Bootstrap dark background */
     color: rgba(255, 255, 255, 0.7); /* Lighter text color */
     text-align: center;
-    padding: 1rem 0; /* More padding */
+    padding: 1rem 0; /* Padding */
     margin-top: 3rem; /* Ensure space above footer */
     font-size: 0.9rem;
 }
@@ -152,6 +155,10 @@ h2 i { /* Style icons in headings */
 }
 
 /* Navbar adjustments */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Add subtle shadow to navbar */
+}
+
 .navbar-dark .navbar-brand {
     font-weight: 600;
     color: #ffffff;
@@ -164,6 +171,10 @@ h2 i { /* Style icons in headings */
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #ffffff; /* White on hover/active */
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+     color: rgba(255, 255, 255, 0.4); /* Dim disabled nav link */
+     pointer-events: none;
 }
 
 /* Accordion Customization */
@@ -233,9 +244,7 @@ h2 i { /* Style icons in headings */
     }
     h2 {
         font-size: 1.75rem;
-        text-align: left; /* Align left on smaller screens */
-         border-bottom: none;
-         padding-bottom: 0;
+        /* Keep text-align: left; from main h2 rule */
     }
      .section-padding {
         padding-top: 2rem;
@@ -244,14 +253,14 @@ h2 i { /* Style icons in headings */
     .card-img-top {
         height: 180px; /* Adjust image height */
     }
-    .col-lg-4 { /* Ensure 2 columns on medium, 1 on small */
+    .col-lg-4.col-md-6 { /* Target project cards specifically */
          flex: 0 0 auto;
          width: 50%;
     }
 }
 
 @media (max-width: 576px) {
-    .col-lg-4 {
+     .col-lg-4.col-md-6 { /* Target project cards specifically */
          width: 100%; /* Stack cards on small screens */
     }
      .jumbotron h1 {
@@ -262,8 +271,5 @@ h2 i { /* Style icons in headings */
     }
     .footer {
         font-size: 0.8rem;
-    }
-     body {
-        padding-bottom: 80px; /* More space for potentially taller footer */
     }
 }
